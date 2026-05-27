@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "ExecutiveMind: an AI-powered productivity assistant for emails, meeting notes, research, and chat." },
       { name: "author", content: "ExecutiveMind" },
       { property: "og:title", content: "ExecutiveMind — AI Productivity Hub" },
-      { property: "og:description", content: "AI assistant for emails, summaries, research, and chat." },
+      { property: "og:description", content: "ExecutiveMind: an AI-powered productivity assistant for emails, meeting notes, research, and chat." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "ExecutiveMind — AI Productivity Hub" },
+      { name: "twitter:description", content: "ExecutiveMind: an AI-powered productivity assistant for emails, meeting notes, research, and chat." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5db0817c-d04f-461a-949f-0124b09b27e0/id-preview-adabdfc2--af272842-fcd6-472e-a129-3f4a8033483b.lovable.app-1779878064361.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5db0817c-d04f-461a-949f-0124b09b27e0/id-preview-adabdfc2--af272842-fcd6-472e-a129-3f4a8033483b.lovable.app-1779878064361.png" },
     ],
     links: [
       {
