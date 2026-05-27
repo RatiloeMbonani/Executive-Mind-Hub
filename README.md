@@ -12,10 +12,10 @@ workspace interface to improve productivity, save time, and support smarter deci
 
 Professionals across industries spend a significant amount of time performing repetitive administrative tasks such as:
 
-* **Writing professional emails
-* **Summarizing lengthy meeting notes
-* **Conducting research and extracting key insights
-* **Managing workplace communication
+* Writing professional emails
+* Summarizing lengthy meeting notes
+* Conducting research and extracting key insights
+* Managing workplace communication
   
 These tasks reduce productivity, consume valuable working hours, and can slow down decision-making processes.
 
