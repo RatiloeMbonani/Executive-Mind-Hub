@@ -110,6 +110,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 import { AppSidebar } from "@/components/AppSidebar";
 import { MobileNav } from "@/components/MobileNav";
+import { Toaster } from "sonner";
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
@@ -124,6 +125,7 @@ function RootComponent() {
           </div>
         </main>
         <MobileNav />
+        <Toaster position="top-right" richColors />
       </div>
     </QueryClientProvider>
   );
