@@ -1,10 +1,10 @@
 // Minimal, safe markdown renderer for AI output. No raw HTML, no eval.
 // Supports: # h1, ## h2, ### h3, **bold**, *italic*, `code`, - bullets, 1. lists,
 // blank-line paragraphs, > blockquotes, and [ ] task items.
-import { Fragment } from "react";
+import { Fragment, type ReactNode } from "react";
 
 function renderInline(text: string) {
-  const nodes: (string | JSX.Element)[] = [];
+  const nodes: ReactNode[] = [];
   const regex = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let last = 0;
   let m: RegExpExecArray | null;
@@ -23,7 +23,7 @@ function renderInline(text: string) {
 
 export function Markdown({ content }: { content: string }) {
   const lines = content.replace(/\r\n/g, "\n").split("\n");
-  const blocks: JSX.Element[] = [];
+  const blocks: ReactNode[] = [];
   let i = 0;
   let key = 0;
 
