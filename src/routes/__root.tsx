@@ -72,11 +72,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "ExecutiveMind — AI Productivity Hub" },
+      { name: "description", content: "ExecutiveMind: an AI-powered productivity assistant for emails, meeting notes, research, and chat." },
+      { name: "author", content: "ExecutiveMind" },
+      { property: "og:title", content: "ExecutiveMind — AI Productivity Hub" },
+      { property: "og:description", content: "AI assistant for emails, summaries, research, and chat." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -108,13 +108,25 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+import { AppSidebar } from "@/components/AppSidebar";
+import { MobileNav } from "@/components/MobileNav";
+import { Toaster } from "sonner";
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="flex min-h-screen w-full bg-background">
+        <AppSidebar />
+        <main className="flex-1 min-w-0 pb-20 md:pb-0">
+          <div className="max-w-6xl mx-auto px-5 md:px-10 py-8 md:py-12">
+            <Outlet />
+          </div>
+        </main>
+        <MobileNav />
+        <Toaster position="top-right" richColors />
+      </div>
     </QueryClientProvider>
   );
 }
