@@ -5,6 +5,7 @@
 ExecutiveMind is a modern AI-powered productivity assistant designed to help professionals automate repetitive workplace tasks such as email drafting, 
 meeting note summarization, research assistance, and workplace communication. The application combines Artificial Intelligence with a clean, responsive
 workspace interface to improve productivity, save time, and support smarter decision-making in professional environments.
+
 ---
 
 ## 📌 Problem Statement
@@ -15,7 +16,7 @@ Professionals across industries spend a significant amount of time performing re
 * **Summarizing lengthy meeting notes
 * **Conducting research and extracting key insights
 * **Managing workplace communication
-* 
+  
 These tasks reduce productivity, consume valuable working hours, and can slow down decision-making processes.
 
 ---
@@ -48,12 +49,12 @@ A conversational workspace companion designed to handle ad-hoc professional inqu
 
 ExecutiveMind is engineered using a modern, decoupled full-stack architecture built for scalability and performance.
 
-| **Frontend Framework** | **React.js (TypeScript)** 
-| **Build Engine** | **Vite** 
-| **Styling Engine** | **Tailwind CSS** 
-| **UI Prototyping** | **Lovable.ai**
-| **Runtime Environment**| **Node.js** 
-| **Backend API Core** | **Express.js**
+* **Frontend Framework**: React.js (TypeScript)
+* **Build Engine** :Vite
+* **Styling Engine** :Tailwind CSS
+* **UI Prototyping** :Lovable.ai
+* **Runtime Environment** :Node.js
+*  **Backend API Core** :Express.js
 
 ---
 
