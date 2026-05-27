@@ -108,13 +108,23 @@ function RootShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+import { AppSidebar } from "@/components/AppSidebar";
+import { MobileNav } from "@/components/MobileNav";
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="flex min-h-screen w-full bg-background">
+        <AppSidebar />
+        <main className="flex-1 min-w-0 pb-20 md:pb-0">
+          <div className="max-w-6xl mx-auto px-5 md:px-10 py-8 md:py-12">
+            <Outlet />
+          </div>
+        </main>
+        <MobileNav />
+      </div>
     </QueryClientProvider>
   );
 }
